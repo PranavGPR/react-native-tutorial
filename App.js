@@ -10,6 +10,7 @@ export default function App() {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
       <MaterialCommunityIcons name='email' size={200} color='dodgerblue' />
+      <AppText>I Love React Native!</AppText>
     </View>
   );
 }
