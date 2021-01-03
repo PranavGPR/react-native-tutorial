@@ -1,6 +1,8 @@
 import React from "react";
 import { Image, StyleSheet, View } from "react-native";
 
+import colors from "../config/colors";
+
 export default function ViewImageScreen() {
   return (
     <View style={styles.container}>
@@ -22,7 +24,7 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    backgroundColor: "#000",
+    backgroundColor: colors.black,
     alignItems: "center",
     justifyContent: "center",
   },
@@ -32,7 +34,7 @@ const styles = StyleSheet.create({
     left: 20,
     width: 50,
     height: 50,
-    backgroundColor: "#fc5c65",
+    backgroundColor: colors.primary,
   },
   rightBox: {
     position: "absolute",
@@ -40,6 +42,6 @@ const styles = StyleSheet.create({
     right: 20,
     width: 50,
     height: 50,
-    backgroundColor: "#4ecdc4",
+    backgroundColor: colors.secondary,
   },
 });
