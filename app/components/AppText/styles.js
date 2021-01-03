@@ -1,9 +1,4 @@
-import React from "react";
-import { Platform, StyleSheet, Text, View } from "react-native";
-
-export default function AppText({ children }) {
-  return <Text style={styles.text}>{children}</Text>;
-}
+import { StyleSheet, Platform } from "react-native";
 
 const styles = StyleSheet.create({
   text: {
@@ -20,3 +15,5 @@ const styles = StyleSheet.create({
     }),
   },
 });
+
+export default styles;
