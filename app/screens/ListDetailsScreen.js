@@ -15,7 +15,7 @@ export default function ListDetailsScreen({
   return (
     <View>
       <Card title={title} subtitle={subtitle} image={image} />
-      <ListItem username={username} userImage={userImage} listings={listings} />
+      <ListItem title={username} image={userImage} subtitle={listings} />
     </View>
   );
 }

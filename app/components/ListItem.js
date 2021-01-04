@@ -3,30 +3,30 @@ import { Image, StyleSheet, View } from "react-native";
 
 import AppText from "./AppText";
 
-export default function ListItem({ username, userImage, listings }) {
+export default function ListItem({ title, image, subtitle }) {
   return (
-    <View style={styles.user}>
-      <Image style={styles.userImage} source={userImage} />
-      <View style={styles.userDetails}>
-        <AppText>{username}</AppText>
-        <AppText style={{ color: "grey" }}>{listings} Listings</AppText>
+    <View style={styles.container}>
+      <Image style={styles.image} source={image} />
+      <View style={styles.details}>
+        <AppText>{title}</AppText>
+        <AppText style={{ color: "grey" }}>{subtitle}</AppText>
       </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  user: {
+  container: {
     margin: 20,
     flex: 1,
     flexDirection: "row",
   },
-  userImage: {
+  image: {
     width: 75,
     height: 75,
     borderRadius: 50,
   },
-  userDetails: {
+  details: {
     marginHorizontal: 10,
   },
 });

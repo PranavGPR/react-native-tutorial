@@ -27,7 +27,7 @@ export default function App() {
       image={require("./app/assets/jacket.jpg")}
       username='Mosh Hamedani'
       userImage={require("./app/assets/mosh.jpg")}
-      listings='5'
+      listings='5 Listings'
     />
   );
 }
