@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {
   Button,
+  FlatList,
   Modal,
   StyleSheet,
   TouchableWithoutFeedback,
@@ -10,8 +11,9 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 import defaultStyles from "../config/styles";
 import AppText from "./AppText";
+import PickerItem from "./PickerItem";
 
-export default function AppPicker({ icon, placeholder, ...otherProps }) {
+export default function AppPicker({ icon, items, placeholder }) {
   const [modalVisible, setModalVisible] = useState(false);
 
   return (
@@ -36,6 +38,13 @@ export default function AppPicker({ icon, placeholder, ...otherProps }) {
       </TouchableWithoutFeedback>
       <Modal visible={modalVisible} animationType='slide'>
         <Button title='Close' onPress={() => setModalVisible(false)} />
+        <FlatList
+          data={items}
+          keyExtractor={(item) => item.value.toString()}
+          renderItem={({ item }) => (
+            <PickerItem label={item.label} onPress={() => console.log(item)} />
+          )}
+        />
       </Modal>
     </>
   );
