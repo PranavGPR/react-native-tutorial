@@ -21,14 +21,15 @@ export default function App() {
     //     image={require("./app/assets/jacket.jpg")}
     //   />
     // </View>
-    <ListDetailsScreen
-      title='Red jacket for sale!'
-      subtitle='$100'
-      image={require("./app/assets/jacket.jpg")}
-      username='Mosh Hamedani'
-      userImage={require("./app/assets/mosh.jpg")}
-      listings='5 Listings'
-    />
+    // <ListDetailsScreen
+    //   title='Red jacket for sale!'
+    //   subtitle='$100'
+    //   image={require("./app/assets/jacket.jpg")}
+    //   username='Mosh Hamedani'
+    //   userImage={require("./app/assets/mosh.jpg")}
+    //   listings='5 Listings'
+    // />
+    <ViewImageScreen />
   );
 }
 
