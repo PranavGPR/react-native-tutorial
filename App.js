@@ -1,5 +1,5 @@
-import React from "react";
-import { View, StyleSheet } from "react-native";
+import React, { useState } from "react";
+import { View, StyleSheet, TextInput, Text } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 import ViewImageScreen from "./app/screens/ViewImageScreen";
@@ -14,8 +14,11 @@ import Screen from "./app/components/Screen";
 import Icon from "./app/components/Icon";
 import ListItem from "./app/components/ListItem";
 import ListingsScreen from "./app/screens/ListingsScreen";
+import AppTextInput from "./app/components/AppTextInput";
 
 export default function App() {
+  const [firstName, setFirstName] = useState("");
+
   return (
     // <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
     //   <AppButton title='login' onPress={() => console.log("Button Tapped")} />
@@ -44,14 +47,18 @@ export default function App() {
     //     IconComponent={<Icon name='email' />}
     //   />
     // </Screen>
-    <ListingsScreen />
+    // <ListingsScreen />
+    // <Screen>
+    //   <Text>{firstName}</Text>
+    //   <TextInput
+    //     secureTextEntry
+    //     placeholder='First Name'
+    //     style={{ borderBottomColor: "#ccc", borderBottomWidth: 1 }}
+    //     onChangeText={(text) => setFirstName(text)}
+    //   />
+    // </Screen>
+    <AppTextInput placeholder='Username' icon='email' />
   );
 }
 
-const styles = StyleSheet.create({
-  // container: {
-  //   padding: 20,
-  //   paddingTop: 100,
-  //   backgroundColor: "#f8f4f4",
-  // },
-});
+const styles = StyleSheet.create({});
