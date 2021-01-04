@@ -10,6 +10,8 @@ import Card from "./app/components/Card";
 import ListDetailsScreen from "./app/screens/ListDetailsScreen";
 import MessagesScreen from "./app/screens/MessagesScreen";
 import MyAccountScreen from "./app/screens/MyAccountScreen";
+import Screen from "./app/components/Screen";
+import Icon from "./app/components/Icon";
 
 export default function App() {
   return (
@@ -32,7 +34,10 @@ export default function App() {
     //   listings='5 Listings'
     // />
     // <ViewImageScreen />
-    <MyAccountScreen />
+    // <MyAccountScreen />
+    <Screen>
+      <Icon name='email' size={100} backgroundColor='red' iconColor='white' />
+    </Screen>
   );
 }
 
