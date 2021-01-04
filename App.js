@@ -35,14 +35,14 @@ export default function App() {
     //   listings='5 Listings'
     // />
     // <ViewImageScreen />
-    // <MyAccountScreen />
-    <Screen>
-      <ListItem
-        title='My Title'
-        // subtitle='My Subtitle'
-        ImageComponent={<Icon name='email' />}
-      />
-    </Screen>
+    <MyAccountScreen />
+    // <Screen>
+    //   <ListItem
+    //     title='My Title'
+    //     // subtitle='My Subtitle'
+    //     IconComponent={<Icon name='email' />}
+    //   />
+    // </Screen>
   );
 }
 

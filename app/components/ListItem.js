@@ -12,13 +12,13 @@ export default function ListItem({
   onPress,
   renderRightActions,
   style,
-  ImageComponent,
+  IconComponent,
 }) {
   return (
     <Swipeable renderRightActions={renderRightActions}>
       <TouchableHighlight onPress={onPress} underlayColor={colors.lightgrey}>
         <View style={[styles.container, style]}>
-          {ImageComponent}
+          {IconComponent}
           {image && <Image style={styles.image} source={image} />}
           <View style={styles.details}>
             <AppText style={styles.title}>{title}</AppText>
