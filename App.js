@@ -13,6 +13,7 @@ import MyAccountScreen from "./app/screens/MyAccountScreen";
 import Screen from "./app/components/Screen";
 import Icon from "./app/components/Icon";
 import ListItem from "./app/components/ListItem";
+import ListingsScreen from "./app/screens/ListingsScreen";
 
 export default function App() {
   return (
@@ -35,7 +36,7 @@ export default function App() {
     //   listings='5 Listings'
     // />
     // <ViewImageScreen />
-    <MyAccountScreen />
+    // <MyAccountScreen />
     // <Screen>
     //   <ListItem
     //     title='My Title'
@@ -43,6 +44,7 @@ export default function App() {
     //     IconComponent={<Icon name='email' />}
     //   />
     // </Screen>
+    <ListingsScreen />
   );
 }
 
