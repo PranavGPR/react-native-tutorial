@@ -18,9 +18,8 @@ export default function ListItem({ title, image, subtitle }) {
 
 const styles = StyleSheet.create({
   container: {
-    margin: 20,
-    flex: 1,
     flexDirection: "row",
+    padding: 15,
   },
   details: {
     marginHorizontal: 10,

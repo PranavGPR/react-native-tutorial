@@ -15,9 +15,15 @@ export default function ListDetailsScreen({
   return (
     <View>
       <Card title={title} subtitle={subtitle} image={image} />
-      <ListItem title={username} image={userImage} subtitle={listings} />
+      <View style={styles.userContainer}>
+        <ListItem title={username} image={userImage} subtitle={listings} />
+      </View>
     </View>
   );
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  userContainer: {
+    margin: 20,
+  },
+});

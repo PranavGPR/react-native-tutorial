@@ -8,6 +8,7 @@ import AppText from "./app/components/AppText";
 import AppButton from "./app/components/AppButton";
 import Card from "./app/components/Card";
 import ListDetailsScreen from "./app/screens/ListDetailsScreen";
+import MessagesScreen from "./app/screens/MessagesScreen";
 
 export default function App() {
   return (
@@ -29,7 +30,8 @@ export default function App() {
     //   userImage={require("./app/assets/mosh.jpg")}
     //   listings='5 Listings'
     // />
-    <ViewImageScreen />
+    // <ViewImageScreen />
+    <MessagesScreen />
   );
 }
 
