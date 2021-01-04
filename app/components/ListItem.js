@@ -11,11 +11,12 @@ export default function ListItem({
   subtitle,
   onPress,
   renderRightActions,
+  style,
 }) {
   return (
     <Swipeable renderRightActions={renderRightActions}>
       <TouchableHighlight onPress={onPress} underlayColor={colors.lightgrey}>
-        <View style={styles.container}>
+        <View style={[styles.container, style]}>
           <Image style={styles.image} source={image} />
           <View style={styles.details}>
             <AppText style={styles.title}>{title}</AppText>
@@ -34,6 +35,7 @@ const styles = StyleSheet.create({
   },
   details: {
     marginHorizontal: 10,
+    justifyContent: "center",
   },
   image: {
     width: 75,
@@ -45,5 +47,6 @@ const styles = StyleSheet.create({
   },
   title: {
     fontWeight: "500",
+    marginBottom: 5,
   },
 });

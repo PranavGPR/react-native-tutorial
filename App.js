@@ -9,6 +9,7 @@ import AppButton from "./app/components/AppButton";
 import Card from "./app/components/Card";
 import ListDetailsScreen from "./app/screens/ListDetailsScreen";
 import MessagesScreen from "./app/screens/MessagesScreen";
+import MyAccountScreen from "./app/screens/MyAccountScreen";
 
 export default function App() {
   return (
@@ -31,7 +32,7 @@ export default function App() {
     //   listings='5 Listings'
     // />
     // <ViewImageScreen />
-    <MessagesScreen />
+    <MyAccountScreen />
   );
 }
 
