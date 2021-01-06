@@ -13,13 +13,7 @@ import defaultStyles from "../config/styles";
 import AppText from "./AppText";
 import PickerItem from "./PickerItem";
 
-export default function AppPicker({
-  icon,
-  items,
-  placeholder,
-  onSelectItem,
-  selectedItem,
-}) {
+export default function AppPicker({ icon, items, onSelectItem, selectedItem }) {
   const [modalVisible, setModalVisible] = useState(false);
 
   return (
