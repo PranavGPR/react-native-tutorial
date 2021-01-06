@@ -1,8 +1,9 @@
 import React from "react";
 import { Image, ImageBackground, Text, View, StyleSheet } from "react-native";
+
 import AppButton from "../components/AppButton";
 
-function WelcomeScreen(props) {
+function WelcomeScreen() {
   return (
     <ImageBackground
       source={require("../assets/background.jpg")}
