@@ -1,29 +1,48 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 
-import Card from "../components/Card";
 import ListItem from "../components/ListItem";
+import colors from "../config/colors";
 
-export default function ListDetailsScreen({
-  title,
-  subtitle,
-  image,
-  username,
-  userImage,
-  listings,
-}) {
+export default function ListDetailsScreen({ route }) {
+  const listing = route.params;
   return (
     <View>
-      <Card title={title} subtitle={subtitle} image={image} />
-      <View style={styles.userContainer}>
-        <ListItem title={username} image={userImage} subtitle={listings} />
+      <Image style={styles.image} source={listing.image} />
+      <View style={styles.detailsContainer}>
+        <Text style={styles.title}>{listing.title}</Text>
+        <Text style={styles.price}>${listing.price}</Text>
+        <View style={styles.userContainer}>
+          <ListItem
+            image={require("../assets/mosh.jpg")}
+            title='Mosh Hamedani'
+            subtitle='5 Listings'
+          />
+        </View>
       </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+  detailsContainer: {
+    padding: 20,
+  },
+  image: {
+    width: "100%",
+    height: 300,
+  },
+  price: {
+    color: colors.secondary,
+    fontWeight: "bold",
+    fontSize: 20,
+    marginVertical: 10,
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: "500",
+  },
   userContainer: {
-    margin: 20,
+    marginVertical: 40,
   },
 });
