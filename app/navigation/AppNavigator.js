@@ -29,13 +29,6 @@ export default AppNavigator = () => (
             onPress={() => navigation.navigate("ListingEdit")}
           />
         ),
-        tabBarIcon: ({ color, size }) => (
-          <MaterialCommunityIcons
-            name='plus-circle'
-            color={color}
-            size={size}
-          />
-        ),
       })}
     />
     <Tab.Screen
